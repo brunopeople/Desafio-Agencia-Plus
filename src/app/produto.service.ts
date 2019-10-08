@@ -6,9 +6,10 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProdutoService {
 
-  url = 'http://localhost:4000/produtos';
+  url = 'http://localhost:4000/products';
 
   constructor(private http: HttpClient) { }
+
   addProduct(ProductName, ProductDescription, ProductPrice) {
     const obj = {
       ProductName,
